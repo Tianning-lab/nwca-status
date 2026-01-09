@@ -27,7 +27,7 @@ Visit our live status page: **[status.nwca-api.com](https://tianning-lab.github.
 ## 📞 Support
 
 For API access or support inquiries:
-- **Email:** tn@newwaycapital.com
+- **Email:** tnk@newwaycapital.com
 - **Documentation:** [API Docs](http://83.228.212.77:8000/docs)
 
 ---
