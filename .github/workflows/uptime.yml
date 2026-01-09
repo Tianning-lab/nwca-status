@@ -13,6 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: upptime/upptime-action@master
+      - uses: upptime/uptime-monitor@v1.38.0
         with:
           github-token: ${{ secrets.GH_PAT }}
