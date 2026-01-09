@@ -13,21 +13,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: upptime/uptime-monitor@v1.38.0
+      - uses: upptime/uptime-monitor@master
         with:
           command: "readme"
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
-          
-  site:
+
+  graphs:
     runs-on: ubuntu-latest
     needs: uptime
     steps:
       - uses: actions/checkout@v4
-      - uses: upptime/status-page@v1.38.0
+      - uses: upptime/graphs@master
         with:
-          command: "site"
+          command: "graphs"
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
