@@ -1,0 +1,24 @@
+owner: Tianning-lab
+repo: nwca-status
+
+sites:
+  - name: NWCA API Health
+    url: http://83.228.212.77:8000/v1/health
+    
+  - name: Regime Classification
+    url: http://83.228.212.77:8000/v1/regime/current
+    
+  - name: API Documentation
+    url: http://83.228.212.77:8000/docs
+
+status-website:
+  baseUrl: /nwca-status
+  name: NWCA API Status
+  introTitle: "NWCA API Status"
+  introMessage: "Real-time monitoring for New Way Capital Advisory's financial analytics platform"
+  navbar:
+    - title: API Docs
+      href: http://83.228.212.77:8000/docs
+
+workflowSchedule:
+  uptime: "*/5 * * * *"
